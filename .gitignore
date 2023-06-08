@@ -1,0 +1,15 @@
+*.log
+.DS_Store
+
+# IDE files
+.idea
+.vscode
+
+#PyTest
+apitest/Results/
+apitest/*.swp
+apitest/__pycache__/
+apitest/*.py[co]
+apitest/.hypothesis/
+apitest/.pytest_cache/
+apitest/*.xml

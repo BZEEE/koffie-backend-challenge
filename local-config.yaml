@@ -1,5 +1,5 @@
 # This config file contains any environment-specific settings that may
-# be useful for the preprod environment. A few fields are required (the ones below), but
+# be useful for the local environment. A few fields are required (the ones below), but
 # anything else is up to the requirements of the test suite.
 #
 

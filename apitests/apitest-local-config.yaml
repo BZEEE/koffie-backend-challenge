@@ -1,0 +1,8 @@
+# This config file contains any environment-specific settings that may
+# be useful for running the end-to-end tests on the local environment. A
+# few fields are required (the ones below), but anything else is up to the
+# requirements of the test suite.
+#
+
+# The base url for your service
+base_url: "http://localhost:8000"

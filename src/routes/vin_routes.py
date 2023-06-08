@@ -46,5 +46,5 @@ async def get_vin(vin: str):
         return vin_data
     except Exception as e:
         Logger.log(e)
-        raise HTTPException(status_code=INTERNAL_SERVER_ERROR_CODE, detail=f"{GENERIC_ERROR_MESSAGE}: Unable to retrieve vin information)")
+        raise HTTPException(status_code=INTERNAL_SERVER_ERROR_CODE, detail=f"{GENERIC_ERROR_MESSAGE}: Unable to retrieve vin information")
 

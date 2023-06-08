@@ -1,0 +1,9 @@
+- name: GET vin, expect data to be returned
+  vin: "AAAAAAAAAAAA"
+  response_code: 200
+  response:
+    vin: "AAAAAAAAAAAA"
+    make: "efewfef"
+    model: "fwefefewfe"
+    modelYear: "fewfewfwege"
+    bodyClass: "dffedfwefef"
