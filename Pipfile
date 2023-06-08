@@ -1,0 +1,19 @@
+[[source]]
+name = "nexus"
+url = "https://atbsrvusr:XvRTt79U@nexus-master.pipeline.atb.com/repository/atb-pypi-group/simple"
+verify_ssl = false
+
+[packages]
+black = "*"
+flake8 = "*"
+yamllint = "*"
+fastapi = "*"
+uvicorn = "*"
+requests = "*"
+pandas = "*"
+pyarrow = "*"
+
+[dev-packages]
+
+[requires]
+python_version = "3.8"
