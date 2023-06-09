@@ -68,6 +68,21 @@ $ uvicorn src.server:app --reload          # without Make installed on your mach
 1. run the app as stated above
 2. navigate to http://localhost:8000/docs to view the docs
 
+## Running the end-to-end tests
+
+Use `make test-{local,preprod}` to quickly run the entire test suite for
+the desired environment.
+
+Alternatively, to run a specific set of tests (by file, or tag, or other)
+or with custom options, use `pytest` directly:
+
+```
+pipenv run pytest [options] [tests]
+```
+
+Run `pipenv run pytest --help` for all the possible options, or see the
+`pytest` documentation.
+
 ## Running linters
 
 Running `make lint` will run `black`, `flake8`, and `yamllint`, all of

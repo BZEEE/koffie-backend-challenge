@@ -4,5 +4,8 @@
 # requirements of the test suite.
 #
 
+# The directory to containing the yaml-based test data files. Required.
+testdata_dir: "testdata/"
+
 # The base url for your service
 base_url: ""

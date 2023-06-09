@@ -25,7 +25,7 @@ def create_cache_if_doesnt_exist(database):
 
 
 def get_vin_in_cache(database, vin: str):
-    create_cache_if_doesnt_exist()
+    create_cache_if_doesnt_exist(database)
     get_vin_in_cache_query = f"SELECT vin, make, model, model_year, body_class FROM {VIN_CACHE_TABLE_NAME} WHERE vin='{vin}';"
     cache_response = database.execute_query(get_vin_in_cache_query, FetchOptions.FETCH_ONE, False)
     if cache_response is None or len(cache_response) == 0:
@@ -40,12 +40,12 @@ def get_vin_in_cache(database, vin: str):
 
 
 def add_vin_entry_to_cache(database, data):
-    create_cache_if_doesnt_exist()
+    create_cache_if_doesnt_exist(database)
     add_vin_query = f"INSERT INTO {VIN_CACHE_TABLE_NAME} (vin, make, model, model_year, body_class) VALUES ('{data['vin']}', '{data['make']}', '{data['model']}', '{data['modelYear']}', '{data['bodyClass']}');"
     database.execute_query(add_vin_query, None, True)
 
 
 def delete_vin_from_cache(database, vin: str):
-    create_cache_if_doesnt_exist()
+    create_cache_if_doesnt_exist(database)
     delete_vin_query = f"DELETE FROM {VIN_CACHE_TABLE_NAME} WHERE vin='{vin}';"
     database.execute_query(delete_vin_query, None, True)
