@@ -1,7 +1,7 @@
 [[source]]
-name = "nexus"
-url = "https://atbsrvusr:XvRTt79U@nexus-master.pipeline.atb.com/repository/atb-pypi-group/simple"
-verify_ssl = false
+url = "https://pypi.python.org/simple"
+verify_ssl = true
+name = "pypi"
 
 [packages]
 black = "*"
